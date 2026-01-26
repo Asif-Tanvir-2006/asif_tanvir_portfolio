@@ -14,29 +14,31 @@ const NumberCountAnimation = ({ start = 0, end, duration, style }) => {
     const countUpRef = useRef(null);
 
     useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: "0px",
-            threshold: 0.5,
-        };
+        const node = countUpRef.current; 
 
-        const observer = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                setIsVisible(true);
-                observer.unobserve(entry.target);
+        if (!node) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5,
             }
-        }, options);
+        );
 
-        if (countUpRef.current) {
-            observer.observe(countUpRef.current);
-        }
+        observer.observe(node);
 
         return () => {
-            if (countUpRef.current) {
-                observer.unobserve(countUpRef.current);
-            }
+            observer.unobserve(node); 
         };
     }, []);
+
 
     return (
         <div ref={countUpRef} className="num" style={style}>
@@ -72,7 +74,7 @@ const Cp = ({ pt, rating, rank, solved, link, handle }) => {
             <div className="platform">
                 <img src={platform[pt].image} alt="" srcset="" />
             </div>
-            <a className='handle' href = {link} no_opener no_referrer>{handle}</a>
+            <a className='handle' href={link} no_opener no_referrer>{handle}</a>
             <div className="backdrop">
                 <img src={platform[pt].backdrop} alt="" srcset="" />
             </div>
