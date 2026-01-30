@@ -14,7 +14,7 @@ function Header() {
             </div>
 
             <div className={styles.right}>
-                <button>󱪙  <span style={{marginLeft:"5px"}}>Resume</span></button>
+                <button>󱪙  <span style={{marginLeft:"5px"}}><a href="https://drive.google.com/file/d/1nhXS6-Vk54CXmCRBJPTt7Xr9UHVHQgH2/view?usp=sharing">Resume</a></span></button>
             </div>
         </div>
     );

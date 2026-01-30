@@ -15,16 +15,19 @@
     margin-top: 40px;
     padding: 5px;
 }
-.tags{
+
+.tags {
     display: flex;
     gap: 10px;
 }
-.tags .tag{
+
+.tags .tag {
     background-color: #323647;
     width: fit-content;
     margin-top: 3px;
     padding: 3px;
 }
+
 .wrapper {
     padding: 0 17vw;
     padding-top: min(5vw, 40px);
@@ -76,6 +79,13 @@
     color: whitesmoke;
     /* padding-left: 10px; */
 }
+.box{
+    transition: 0.3s ease-in-out;
+}
+.box:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
 
 @media screen and (max-width: 1300px) {
     .wrapper {
@@ -108,17 +118,20 @@
         align-items: center;
         gap: 1rem;
     }
-    .right{
+
+    .right {
         padding-top: 0;
     }
 }
-.link{
+
+.link {
     all: unset;
     padding-top: 20px;
     color: #ffffff98;
     border-bottom: 1px solid #666870;
     /* background-color: ; */
 }
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);

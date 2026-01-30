@@ -1,9 +1,10 @@
 import styles from './Intro.module.css';
 import useReveal from './useReveal';
-import img1 from '../assets/1.png';
+import img1 from '../assets/me.webp';
+import useImagePreload from './PreloadHook';
 function Intro() {
     const [ref, show] = useReveal();
-
+      useImagePreload(img1);
     return (
         <div className={styles.wrapper} ref={ref}>
             <div className={`${styles.left} ${show ? styles.showLeft : styles.hiddenLeft}`}>
@@ -22,7 +23,7 @@ function Intro() {
                 <div className={styles.dash}></div>
 
                 <div className={styles.socials}>
-                    <div>󰌻 󰊤</div>
+                    <div> <a href="https://www.linkedin.com/in/asif-tanvir-a68084302/">󰌻 </a> <a href="https://github.com/Asif-Tanvir-2006/">󰊤</a></div>
                     <div className={styles.smallImg}></div>
                 </div>
             </div>

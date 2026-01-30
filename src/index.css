@@ -9,6 +9,13 @@ body {
   -ms-overflow-style: none;
 
 }
+a {
+  all: unset;
+  
+}
+a:hover{
+  cursor: pointer;
+}
 
 ::-webkit-scrollbar {
   width: 0px;
