@@ -1,5 +1,4 @@
 .codercard2 * {
-    /* outline: 1px solid lime; */
     z-index: 100;
 }
 
@@ -9,11 +8,7 @@
     align-items: center;
     flex-direction: column;
     padding: 1rem;
-    /* background-color: #242734; */
-  /* background-color: #242734; */
     background-color: #323647;
-
-    /* background-color: ; */
     border-radius: 10px;
     position: relative;
     width: min(16rem, 100%);
@@ -23,18 +18,9 @@
     transition: ease 0.3s;
     cursor: pointer;
     text-decoration: none;
-    /* margin: 3rem; */
 }
 
-.codercard2.leetcode {
-    border: 2px solid #ffd15c45;
-}
-.codercard2.codechef {
-    border: 2px solid #f0535345;
-}
-.codercard2.codeforces {
-    border: 2px solid #2196f345;
-}
+
 
 .codercard2 .platform {
     height: 6rem;

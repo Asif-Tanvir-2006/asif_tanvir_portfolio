@@ -4,9 +4,6 @@ import CountUp from "react-countup";
 import lc from "../assets/LeetcodeLogo.png";
 import cc from "../assets/CodechefLogo.png";
 import cf from "../assets/CodeforcesLogo.png";
-import lcback from "../assets/lcback.png";
-import ccback from "../assets/ccback.png";
-import cfback from "../assets/cfback.png";
 import { useState, useRef, useEffect } from "react";
 
 const NumberCountAnimation = ({ start = 0, end, duration, style }) => {
@@ -49,19 +46,16 @@ const NumberCountAnimation = ({ start = 0, end, duration, style }) => {
 
 const platform = {
     leetcode: {
-        primary: "#C77F1B",
+        primary: "#fdc35c",
         image: lc,
-        backdrop: lcback,
     },
     codechef: {
-        primary: "#E9843C",
+        primary: "#fdc35c",
         image: cc,
-        backdrop: ccback,
     },
     codeforces: {
-        primary: "#2196F3",
+        primary: "#fdc35c",
         image: cf,
-        backdrop: cfback,
     },
 };
 
@@ -75,9 +69,7 @@ const Cp = ({ pt, rating, rank, solved, link, handle }) => {
                 <img src={platform[pt].image} alt="" srcset="" />
             </div>
             <a className='handle' href={link} no_opener no_referrer>{handle}</a>
-            <div className="backdrop">
-                <img src={platform[pt].backdrop} alt="" srcset="" />
-            </div>
+            
 
             <div className="rating">
                 <span className="num" style={style}>
@@ -88,13 +80,13 @@ const Cp = ({ pt, rating, rank, solved, link, handle }) => {
             <div className="stats">
                 <div className="stat">
                     <span className="num" style={style}>
-                        <NumberCountAnimation style={style} start={0} end={rank} duration={1.5} />
+                        <NumberCountAnimation style={{color: 'whitesmoke'}} start={0} end={rank} duration={1.5} />
                     </span>
                     <span>Best Rank</span>
                 </div>
                 <div className="stat">
                     <span className="num" style={style}>
-                        <NumberCountAnimation style={style} start={0} end={solved} duration={1.5} />
+                        <NumberCountAnimation style={{color:'whitesmoke'}} start={0} end={solved} duration={1.5} />
                     </span>
                     <span>Solved</span>
                 </div>

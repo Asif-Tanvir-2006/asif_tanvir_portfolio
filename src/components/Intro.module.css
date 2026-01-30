@@ -9,9 +9,7 @@
     font-family: 'Poppins', uf;
     height: fit-content;
     width: 100vw;
-    padding-top: min(5vw, 20px);
     padding-bottom: min(8vw, 40px);
-
     display: flex;
     padding-left: 17vw;
     /* font-weight: bolder; */
@@ -93,16 +91,12 @@
 }
 
 .img {
-    min-height: 350px;
-    max-height: 350px;
-    min-width: 350px;
-    max-width: 350px;
-
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    background-image: url("../assets/1.png");
-    background-size: cover;
-    /* background-repeat: no-repeat; */
+    object-fit: cover;
 }
+
 
 .socials button {
     display: none;

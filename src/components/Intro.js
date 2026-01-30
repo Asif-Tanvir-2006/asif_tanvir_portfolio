@@ -1,6 +1,6 @@
 import styles from './Intro.module.css';
 import useReveal from './useReveal';
-
+import img1 from '../assets/1.png';
 function Intro() {
     const [ref, show] = useReveal();
 
@@ -28,7 +28,14 @@ function Intro() {
             </div>
 
             <div className={`${styles.right} ${show ? styles.showRight : styles.hiddenRight}`}>
-                <div className={styles.img}></div>
+                <img
+                    src={img1}
+                    alt="Profile"
+                    className={styles.img}
+                    loading="lazy"
+                    decoding="async"
+                />
+
             </div>
         </div>
     );
