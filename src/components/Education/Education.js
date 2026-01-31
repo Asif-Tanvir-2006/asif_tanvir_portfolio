@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './Education.module.css';
 import EducationCard from './EducationCard';
-import TopicName from './TopicName';
+import TopicName from '../TopicName/TopicName';
 
 function Education() {
   const ref = useRef(null);

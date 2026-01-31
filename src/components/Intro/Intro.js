@@ -1,7 +1,7 @@
 import styles from './Intro.module.css';
-import useReveal from './useReveal';
-import img1 from '../assets/me.webp';
-import useImagePreload from './PreloadHook';
+import useReveal from '../useReveal';
+import img1 from '../../assets/me.webp';
+import useImagePreload from '../PreloadHook';
 function Intro() {
     const [ref, show] = useReveal();
       useImagePreload(img1);

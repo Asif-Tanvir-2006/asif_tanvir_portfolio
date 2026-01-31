@@ -1,9 +1,9 @@
 import styles from './Project.module.css'
 import ProjCard from './ProjCard'
-import TopicName from './TopicName';
-import img1 from '../assets/dev1.png'
-import img2 from '../assets/dev2.jpg'
-import img3 from '../assets/dev3.png'
+import TopicName from '../TopicName/TopicName';
+import img1 from '../../assets/dev1.png'
+import img2 from '../../assets/dev2.jpg'
+import img3 from '../../assets/dev3.png'
 
 function Project() {
     return (

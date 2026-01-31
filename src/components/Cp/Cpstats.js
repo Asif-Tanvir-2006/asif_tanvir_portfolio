@@ -1,7 +1,7 @@
 import React from "react";
 import Cp from "./Cp.js";
 import "./Cpstats.css";
-import TopicName from "./TopicName.js";
+import TopicName from "../TopicName/TopicName.js"
 // import CoderCard2 from "../../components/CoderCard2/CoderCard2.jsx";
 export default function CPStats() {
     return (

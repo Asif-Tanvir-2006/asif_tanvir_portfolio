@@ -1,9 +1,9 @@
 import React from "react";
 import "./Cp.css";
 import CountUp from "react-countup";
-import lc from "../assets/LeetcodeLogo.png";
-import cc from "../assets/CodechefLogo.png";
-import cf from "../assets/CodeforcesLogo.png";
+import lc from "../../assets/LeetcodeLogo.png";
+import cc from "../../assets/CodechefLogo.png";
+import cf from "../../assets/CodeforcesLogo.png";
 import { useState, useRef, useEffect } from "react";
 
 const NumberCountAnimation = ({ start = 0, end, duration, style }) => {

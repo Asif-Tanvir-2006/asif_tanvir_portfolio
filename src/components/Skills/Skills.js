@@ -1,6 +1,6 @@
-import styles from './Intro.module.css';
-import TopicName from './TopicName';
-import useReveal from './useReveal';
+import styles from '../Intro/Intro.module.css';
+import TopicName from '../TopicName/TopicName';
+import useReveal from '../useReveal';
 
 function Skills() {
     const [ref, show] = useReveal();

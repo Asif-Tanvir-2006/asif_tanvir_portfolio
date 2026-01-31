@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import styles from './Education.module.css';
-import EducationCard from './EducationCard';
-import TopicName from './TopicName';
+import styles from '../Education/Education.module.css';
+import EducationCard from '../Education/EducationCard';
+import TopicName from '../TopicName/TopicName';
 
 function RevealRow({ children }) {
   const ref = useRef(null);

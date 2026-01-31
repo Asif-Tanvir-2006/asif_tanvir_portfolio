@@ -1,5 +1,5 @@
 import styles from './Project.module.css';
-import useReveal from './useReveal';
+import useReveal from '../useReveal';
 
 function ProjCard({ title, links, info, image, tags = [] }) {
     const [ref, show] = useReveal();
